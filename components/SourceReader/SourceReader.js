@@ -156,11 +156,11 @@ function SourceReader(props) {
   );
 }
 
-SourceReader.propTypes = {
-  componentName: PropTypes.string.isRequired,
-  classes: PropTypes.object.isRequired,
-  mode: PropTypes.string.isRequired,
-};
+// SourceReader.propTypes = {
+//   componentName: PropTypes.string.isRequired,
+//   classes: PropTypes.object.isRequired,
+//   mode: PropTypes.string.isRequired,
+// };
 
 const reducer = 'ui';
 const mapStateToProps = state => ({

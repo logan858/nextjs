@@ -145,10 +145,10 @@ function SearchUi(props) {
   );
 }
 
-SearchUi.propTypes = {
-  classes: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired,
-  intl: intlShape.isRequired
-};
+// SearchUi.propTypes = {
+//   classes: PropTypes.object.isRequired,
+//   history: PropTypes.object.isRequired,
+//   intl: intlShape.isRequired
+// };
 
 export default withStyles(styles)(injectIntl(SearchUi));

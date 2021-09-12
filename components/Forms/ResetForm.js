@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import brand from '../../pages/api/dummy/brand';
 import logo from '../../public/images/logo.svg';
-import Type from '../../styles/components/Typography.scss';
+// import Type from '../../styles/components/Typography.scss';
 import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 import { closeMsgAction } from '../../redux/actions/authActions';
 import { TextFieldRedux } from './ReduxFormMUI';
@@ -41,14 +41,14 @@ function ResetForm(props) {
 
   return (
     <section>
-      <div className={Type.textCenter}>
+      <div className={textCenter}>
         <NavLink to="/" className={classNames(classes.brand, classes.centerFlex)}>
           <img src={logo} alt={brand.name} />
           {brand.name}
         </NavLink>
       </div>
       <Paper className={classes.paperWrap}>
-        <Typography variant="h4" className={classNames(classes.title, Type.textCenter)} gutterBottom>
+        <Typography variant="h4" className={classNames(classes.title, textCenter)} gutterBottom>
           <FormattedMessage {...messages.resetTitle} />
         </Typography>
         <Typography variant="caption" component="p" className={classes.subtitle} gutterBottom align="center">

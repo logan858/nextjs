@@ -57,13 +57,13 @@ class Toggle extends React.Component {
   }
 }
 
-Toggle.propTypes = {
-  classes: PropTypes.object.isRequired,
-  onToggle: PropTypes.func.isRequired,
-  values: PropTypes.array.isRequired,
-  value: PropTypes.string.isRequired,
-  messages: PropTypes.object.isRequired,
-  intl: intlShape.isRequired,
-};
+// Toggle.propTypes = {
+//   classes: PropTypes.object.isRequired,
+//   onToggle: PropTypes.func.isRequired,
+//   values: PropTypes.array.isRequired,
+//   value: PropTypes.string.isRequired,
+//   messages: PropTypes.object.isRequired,
+//   intl: intlShape.isRequired,
+// };
 
 export default withStyles(styles)(injectIntl(Toggle));
